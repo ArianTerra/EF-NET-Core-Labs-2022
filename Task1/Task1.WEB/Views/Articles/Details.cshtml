@@ -1,0 +1,17 @@
+﻿@model Task1.BL.DTO.ArticleDto
+@{
+    ViewData["Title"] = "Article Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@Html.ActionLink("← Back to Articles", "Index")
+
+<h3>Info</h3>
+
+<p><b>ID</b>: @Model.Id</p>
+<p><b>Name</b>: @Model.Name</p>
+<p><b>Source</b>: @Model.Source</p>
+
+<h3>Actions</h3>
+<a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>

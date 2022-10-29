@@ -1,0 +1,24 @@
+﻿@model Task1.BL.DTO.TeacherDto
+@{
+    ViewData["Title"] = "Create Teacher";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Add" asp-controller="Teachers" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <br>
+    <div class="form-group">
+            <label asp-for="TeachingSince">Teaching since</label>
+            <input asp-for="TeachingSince" type="date" class="form-control"/>
+            <span asp-validation-for="TeachingSince"></span>
+        </div>
+    <br>
+    <input type="submit" class="btn btn-primary" value="Submit"/>
+</form>
+
+

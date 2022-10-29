@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{8E0E2D80-2245-4AC3-A03E-A3F7B90ABD84}"
+	ProjectSection(SolutionItems) = preProject
+		Task1\README.md = Task1\README.md
+		Task1\db_example.png = Task1\db_example.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.DAL", "Task1\Task1.DAL\Task1.DAL.csproj", "{214CB61D-7943-4E12-8DA0-F284B7B2D1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.BL", "Task1\Task1.BL\Task1.BL.csproj", "{EF554E2D-96B0-4122-A19E-522DB98FD4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.WEB", "Task1\Task1.WEB\Task1.WEB.csproj", "{6D808BC1-F9BC-4A25-999C-70C4B2325259}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{214CB61D-7943-4E12-8DA0-F284B7B2D1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214CB61D-7943-4E12-8DA0-F284B7B2D1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214CB61D-7943-4E12-8DA0-F284B7B2D1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214CB61D-7943-4E12-8DA0-F284B7B2D1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF554E2D-96B0-4122-A19E-522DB98FD4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF554E2D-96B0-4122-A19E-522DB98FD4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF554E2D-96B0-4122-A19E-522DB98FD4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF554E2D-96B0-4122-A19E-522DB98FD4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D808BC1-F9BC-4A25-999C-70C4B2325259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D808BC1-F9BC-4A25-999C-70C4B2325259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D808BC1-F9BC-4A25-999C-70C4B2325259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D808BC1-F9BC-4A25-999C-70C4B2325259}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{214CB61D-7943-4E12-8DA0-F284B7B2D1CE} = {8E0E2D80-2245-4AC3-A03E-A3F7B90ABD84}
+		{EF554E2D-96B0-4122-A19E-522DB98FD4C7} = {8E0E2D80-2245-4AC3-A03E-A3F7B90ABD84}
+		{6D808BC1-F9BC-4A25-999C-70C4B2325259} = {8E0E2D80-2245-4AC3-A03E-A3F7B90ABD84}
+	EndGlobalSection
+EndGlobal
