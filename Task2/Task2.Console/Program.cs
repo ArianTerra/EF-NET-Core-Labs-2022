@@ -28,7 +28,8 @@ DisplayData(context.Vassals, "All vassals");
 
 // display all descendants of 'Duke of Liverpool'
 var duke = context.Vassals.FirstOrDefault(x => x.Name == "Duke of Liverpool");
-var descendants = context.Vassals.Where(x => x.MedievalVassalId.IsDescendantOf(duke.MedievalVassalId));
+var descendants = context.Vassals.Where(x =>
+    x.MedievalVassalId.IsDescendantOf(duke.MedievalVassalId));
 
 DisplayData(descendants, "Child elements");
 
@@ -37,9 +38,11 @@ var peasant = context.Vassals.Where(x => x.Name == "Peasant1").FirstOrDefault();
 
 IEnumerable<MedievalVassal> GetAllAncestors(MedievalVassal node, IEnumerable<MedievalVassal> hierarchy)
 {
+    yield return node;
     while (node.MedievalVassalId.GetLevel() > 0)
     {
-        var ancestor = hierarchy.FirstOrDefault(x => x.MedievalVassalId == node.MedievalVassalId.GetAncestor(1));
+        var ancestor = hierarchy.FirstOrDefault(x =>
+            x.MedievalVassalId == node.MedievalVassalId.GetAncestor(1));
         yield return ancestor;
         node = ancestor;
     }
@@ -52,6 +55,7 @@ var bob = context.Vassals.FirstOrDefault(x => x.Name == "Knight Bob");
 var branch = context.Vassals.Where(x => x.MedievalVassalId.IsDescendantOf(bob.MedievalVassalId));
 context.Vassals.RemoveRange(branch);
 context.SaveChanges();
+
 DisplayData(context.Vassals, "All data without Knight Bob branch");
 
 // func for displaying all data
