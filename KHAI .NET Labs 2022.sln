@@ -24,6 +24,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2.SQL", "Task2.SQL", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.Console", "Task2\Task2.Console\Task2.Console.csproj", "{CADFF15A-CB4A-496C-8E91-61495AA5BA05}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3", "Task3", "{E76258A8-8041-4E8E-A0E3-9D4302F35C71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3.SQL", "Task3.SQL", "{C55B65BD-39A2-48EE-9182-1532DCC84C57}"
+	ProjectSection(SolutionItems) = preProject
+		Task3\Task3.SQL\Task.sql = Task3\Task3.SQL\Task.sql
+		Task3\Task3.SQL\example.xml = Task3\Task3.SQL\example.xml
+		Task3\Task3.SQL\example2.xml = Task3\Task3.SQL\example2.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +62,6 @@ Global
 		{6D808BC1-F9BC-4A25-999C-70C4B2325259} = {8E0E2D80-2245-4AC3-A03E-A3F7B90ABD84}
 		{61C26E6B-0EFC-4C58-BF4E-BA7D96CC7B11} = {A55507EB-38DB-4A6C-B3EF-504DBCF8E62B}
 		{CADFF15A-CB4A-496C-8E91-61495AA5BA05} = {A55507EB-38DB-4A6C-B3EF-504DBCF8E62B}
+		{C55B65BD-39A2-48EE-9182-1532DCC84C57} = {E76258A8-8041-4E8E-A0E3-9D4302F35C71}
 	EndGlobalSection
 EndGlobal

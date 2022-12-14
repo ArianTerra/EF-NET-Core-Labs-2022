@@ -1,0 +1,14 @@
+<root>
+    <row>
+        <Id>8</Id>
+        <IdProduct>3</IdProduct>
+        <Cantidate>25</Cantidate>
+        <Folio>4568457</Folio>
+    </row>
+    <row>
+        <Id>3</Id>
+        <IdProduct>3</IdProduct>
+        <Cantidate>72</Cantidate>
+        <Folio>4463223</Folio>
+    </row>
+</root>
