@@ -17,6 +17,10 @@ GO
 USE [Task6.SQL]
 CREATE TABLE DocumentsStore as FileTable
 
+-- Insert data
+INSERT INTO DocumentsStore(name, file_stream) VALUES
+('1.txt', CAST('Hello word!' AS VARBINARY(MAX)))
+
 -- Procedure for loading file to storage
 CREATE PROC LoadFile
 	@FileName NVARCHAR(MAX),
@@ -54,6 +58,6 @@ GO
 
 SELECT name FROM DocumentsStore WHERE CONTAINS(file_stream, '"Lorem"')
 
-SELECT name FROM DocumentsStore WHERE CONTAINS(file_stream, '"Lorem" OR "ipsum"')
+SELECT name FROM DocumentsStore WHERE CONTAINS(file_stream, '"проект*" OR "ціна"')
 
 SELECT name FROM DocumentsStore WHERE CONTAINS(file_stream, 'NEAR((Lorem, ipsum), 2, TRUE)')
